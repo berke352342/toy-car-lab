@@ -1,4 +1,4 @@
-function ToyCar(
+function ToyCar (
 brand,
 model,
 year,
@@ -14,9 +14,9 @@ doorsOpen,
 hoodOpen,
 trunkOpen,
 packaging
-){
+ ){
 
-this.brand = brand;
+this.brand =  brand;
 this.model = model;
 this.year = year;
 this.color = color;
@@ -24,10 +24,10 @@ this.price = price;
 this.scale = scale;
 this.vehicleType = vehicleType;
 this.material = material;
-this.length = length;
+this.length  = length;
 this.width = width;
 this.height = height;
-this.doorsOpen = doorsOpen;
+this.doorsOpen= doorsOpen;
 this.hoodOpen = hoodOpen;
 this.trunkOpen = trunkOpen;
 this.packaging = packaging;
@@ -35,7 +35,7 @@ this.packaging = packaging;
 }
 
 
-// object instance
+ // object instance
 const car1 = new ToyCar(
 "Plymouth",
 "Road Runner Hardtop",
@@ -52,10 +52,11 @@ true,
 true,
 true,
 "Window Box"
+
 );
 
 
-// HTML interaction
+// html interaction
 const button = document.getElementById("showCar");
 const info = document.getElementById("carInfo");
 
@@ -78,5 +79,6 @@ info.innerHTML =
 "Hood Open: " + car1.hoodOpen + "<br>" +
 "Trunk Open: " + car1.trunkOpen + "<br>" +
 "Packaging: " + car1.packaging;
+
 
 });
